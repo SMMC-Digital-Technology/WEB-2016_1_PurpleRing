@@ -1,7 +1,7 @@
 /* DOCTYPE Javascipt */
 
 //variables
-var income = document.getElementById("number");
+var incomeField = document.getElementById("incomeField");
 var difference;
 var product;
 var sum;
@@ -22,8 +22,7 @@ var ADDTAX2 = 13330;
 var ADDTAX3 = 30490;
 
 //income tax calculator
-Function calculateTax(income)
-document.getElementById.calculator.incomeField=calculateTax(income)
+function calculateTax(income) {
 
 (( if (income < BRAC1) {
   return ("No Taxes due");
@@ -55,6 +54,6 @@ document.getElementById.calculator.incomeField=calculateTax(income)
   sum = product + ADDTAX3;
  return( "Your tax is" + sum)
   ))
-  
+}
   
   
