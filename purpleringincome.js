@@ -22,7 +22,7 @@ var ADDTAX1 = 3650;
 var ADDTAX2 = 13330;
 var ADDTAX3 = 30490;
 //Statement Display variable
-var statementDisplay.innerHTML("Tax");
+var statementDisplay= document.getElementById("Tax");
 var displayZero = "No tax";
 var displayProduct = " Your Tax is " + product ;
 var displaySum = " Your Tax is" + sum ;
@@ -30,10 +30,9 @@ var displaySum = " Your Tax is" + sum ;
 
 //income tax calculator
 
-    function calculateTax() {
+    function calculateTax(incomeField, difference, product, sum, BRAC1,BRAC2,BRAC3,BRAC4,TAXPER1,TAXPER2,TAXPER3,TAXPER4,ADDTAX1,ADDTAX2,ADDTAX3,statmentDisplay, displayZero, displayProduct, displaySum) { 
         
-    
- if (incomeField < BRAC1) {
+  if (incomeField < BRAC1) {
   return 0;
                                  statementDisplay.innerHTML= displayZero;
     

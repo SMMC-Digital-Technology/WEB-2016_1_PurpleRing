@@ -19,10 +19,6 @@
         <div id="content">
             <p> Welcome to the website of the Government of Zabututi department of finance and taxation, as per order of the new administration this website has been implemented so that citizens like you will easily be able to calculate income tax. </p>
             
-        <div id="graph"> </div>
-            <script src="graphfunction.js"></script>
-            <script src="graphscript.js"></script>
-        </div>
             
             <p> Beneath is the table for reference to the new rules for the tax scheme</p>
        <!--Table settings-->
@@ -76,9 +72,9 @@
                 <!--Please do not use inline scripting for java, this must be saved in a separate file-->
                 <!--Input field goes here-->
                 <p> P.A stands for per annum (per year)</p>
-                <label> Income P.A : <input type="number" value="income" id="incomeField" oninput="calculateTax()"> </label>
+                <label> Income P.A : <input type="number" value="0" id="incomeField" oninput="calculateTax()"> </label>
                 <!--Javascript link-->
-                <div id="Tax"> Tax Payed </div>
+                <div id="Tax"> Type in your income P.A </div>
                 <script src="purpleringincome.js"> 
                 </script>
             </div>
@@ -89,5 +85,6 @@
             <p> Any enquiries concerning taxation and finance should be directed to: Front.Desk@DOFT.gov.zi.</p>
             <p> Government of Zabututi Department of finance and taxation (formerly finance and taxation division Zabututi Treasury.</p>
             </footer>
+        </div>
     </body>
 </html>
