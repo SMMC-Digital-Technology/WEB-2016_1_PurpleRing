@@ -22,6 +22,7 @@
         <div id="graph"> </div>
             <script src="graphfunction.js"></script>
             <script src="graphscript.js"></script>
+        </div>
             
             <p> Beneath is the table for reference to the new rules for the tax scheme</p>
        <!--Table settings-->
@@ -74,23 +75,19 @@
             <div id="calculator">
                 <!--Please do not use inline scripting for java, this must be saved in a separate file-->
                 <!--Input field goes here-->
-                <label> Income: <input type="number" value="income" id="incomeField"> </label>
-                <button onclick="calculateTax()"> calculate your tax</button>
-                </div>
-            
-                
-                
-                
-            <div>
+                <p> P.A stands for per annum (per year)</p>
+                <label> Income P.A : <input type="number" value="income" id="incomeField" oninput="calculateTax()"> </label>
                 <!--Javascript link-->
-                <script src="jspurplering.js"> 
+                <div id="Tax"> Tax Payed </div>
+                <script src="purpleringincome.js"> 
                 </script>
             </div>
+        
         
         <footer>
             <P> The Zabututi Government does not take liability for any inconsistency for information. However if an error is encountered, please send an email to IT.Services@DOFT.gov.zi</P>
             <p> Any enquiries concerning taxation and finance should be directed to: Front.Desk@DOFT.gov.zi.</p>
             <p> Government of Zabututi Department of finance and taxation (formerly finance and taxation division Zabututi Treasury.</p>
-        </footer>
+            </footer>
     </body>
 </html>
