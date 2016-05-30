@@ -7,8 +7,8 @@
  * Parameters: principle, rate (per year) and time (in years).
  * Returns: the simple interest
  */
-function simpleInterest(principle, rate, time) {
-    return principle * rate * time;
+function incomeTax() {
+    return principle * rate *
 }
 
 /**
@@ -17,9 +17,11 @@ function simpleInterest(principle, rate, time) {
 function drawGraph() {
 
     // declare all variables (variables inside a function are created when the function is called)
-    var trace, data, layout, time, interest;
-    time = [];
-    interest = [];
+    var income, difference, product, sum ;
+    income = document.getElementById("incomeField");
+    difference = ;
+    product = ;
+    sum = ;
     
     //generate the values
     for (var i = 0; i < 26; i++) {

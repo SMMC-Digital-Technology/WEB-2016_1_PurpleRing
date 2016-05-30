@@ -6,6 +6,7 @@ var difference;
 var product;
 var sum;
 //constants below listed as var due to some browsers not supporting “const”
+//constants are in capital letters as per normal convention
 //income brackets
 var BRAC1 = 16000;
 var BRAC2 = 52500;
@@ -31,29 +32,30 @@ function calculateTax(income) {
   console.log ("Taxes due");
    difference = income - BRAC1;
    product = difference * TAXPER1 ;
-  return ( "Your  tax  is " + product);
+  return.innerHTML ( "Your  tax  is " + product);
   
 } else if (income < BRAC3) {
-  console.log ("Taxes due");
+  console.log ("Taxes due"); 
   difference = income - BRAC2;
   product = difference * TAXPER2;
   sum = product + ADDTAX1;
-  return ( "Your tax is " + sum);
+  return.innerHTML ( "Your tax is " + sum);
   
 } else if (income < BRAC4) {
   console.log (" Taxes due");
   difference = income - BRAC3;
   product = difference * TAXPER3;
   sum = product + ADDTAX2;
-  return ( "Your tax is " + sum);
+  return.innerHTML ( "Your tax is " + sum);
    
 } else {
   console.log ("Taxes due");
   difference = income - BRAC4;
   product = difference * TAXPER4;
   sum = product + ADDTAX3;
- return( "Your tax is" + sum)
+ return.innerHTML( "Your tax is" + sum)
   ))
 }
+
   
   
