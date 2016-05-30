@@ -19,10 +19,9 @@
         <div id="content">
             <p> Welcome to the website of the Government of Zabututi department of finance and taxation, as per order of the new administration this website has been implemented so that citizens like you will easily be able to calculate income tax. </p>
             
-        <div id="graph">
+        <div id="graph"> </div>
             <script src="graphfunction.js"></script>
             <script src="graphscript.js"></script>
-            </div>
             
             <p> Beneath is the table for reference to the new rules for the tax scheme</p>
        <!--Table settings-->
@@ -75,14 +74,18 @@
             <div id="calculator">
                 <!--Please do not use inline scripting for java, this must be saved in a separate file-->
                 <!--Input field goes here-->
-                <label> Income: <input type="number" value="income" id="income field"> </label>
+                <label> Income: <input type="number" value="income" id="incomeField"> </label>
+                <button onclick="calculateTax()"> calculate your tax</button>
+                </div>
+            
                 
+                
+                
+            <div>
                 <!--Javascript link-->
-                <!--To be created !!-->
                 <script src="jspurplering.js"> 
                 </script>
             </div>
-        </div>
         
         <footer>
             <P> The Zabututi Government does not take liability for any inconsistency for information. However if an error is encountered, please send an email to IT.Services@DOFT.gov.zi</P>

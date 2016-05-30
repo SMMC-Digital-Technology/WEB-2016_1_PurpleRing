@@ -3,12 +3,22 @@
  **/
 
 /**
- * This function calculates the interest owed on a simple interest loan.
- * Parameters: principle, rate (per year) and time (in years).
- * Returns: the simple interest
+ * This function calculates the income tax owed on an income.
+ * Parameters: , income (per year), brackets, tax percentage, product (brackets * tax percentage) additional tax and 
+ sum 
+ ( product + additional tax) .
+ * Returns: the income tax to be payed
  */
-function incomeTax() {
-    return principle * rate *
+function incomeTax(){
+    
+    
+    
+    
+    
+}
+
+function buttonPress() {
+    
 }
 
 /**
@@ -19,9 +29,7 @@ function drawGraph() {
     // declare all variables (variables inside a function are created when the function is called)
     var income, difference, product, sum ;
     income = document.getElementById("incomeField");
-    difference = ;
-    product = ;
-    sum = ;
+   
     
     //generate the values
     for (var i = 0; i < 26; i++) {
