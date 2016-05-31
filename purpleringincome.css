@@ -9,8 +9,8 @@ html {
 
 h1  {   
    text-align: center;
-    background-color: floralwhite;
-    opacity: 0.8;
+    background-color: 
+    opacity: 0.9;
     
 }
 
@@ -26,8 +26,7 @@ h2 p {
 body {
     opacity: 0.7;
     background-color: floralwhite;
-    
-    
+    height: 1000px;  
 }
 
 content {
@@ -38,8 +37,15 @@ sidebar {
 
 }
 
+h4  {
+    text-align:center;
+    background: cornflowerblue;
+    opacity: 0.9;
+}
+
+
 footer {
-    
+    margin-top: 390px;
 }
 
 
