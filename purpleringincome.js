@@ -22,49 +22,48 @@ var ADDTAX1 = 3650;
 var ADDTAX2 = 13330;
 var ADDTAX3 = 30490;
 //Statement Display variable
-var statementDisplay= document.getElementById("Tax");
+var statementDisplay= document.getElementById("taxDue");
 var displayZero = "No tax";
-var displayProduct = " Your Tax is " + product ;
+var displayProduct = " Your Tax is ";
 var displaySum = " Your Tax is" + sum ;
 
 
 //income tax calculator
+function calculateTax() { 
+    var income=incomeField.value;
+    var tax = incomeTax(income);
+    statementDisplay.innerHTML= displayProduct + tax;
+}
 
-    function calculateTax(incomeField, difference, product, sum, BRAC1,BRAC2,BRAC3,BRAC4,TAXPER1,TAXPER2,TAXPER3,TAXPER4,ADDTAX1,ADDTAX2,ADDTAX3,statmentDisplay, displayZero, displayProduct, displaySum) { 
-        
-  if (incomeField < BRAC1) {
-  return 0;
-                                 statementDisplay.innerHTML= displayZero;
+function incomeTax(income) {
+    var tax;
+if (income < BRAC1) {
+            tax = displayZero;
     
-} else if (incomeField < BRAC2) {;
+} else if (income < BRAC2) {;
    difference = income - BRAC1;
    product = difference * TAXPER1 ;
-    return product;
-                                 statementDisplay.innerHTML= displayProduct;
+    tax = product;
                                 
-} else if (incomeField < BRAC3) {; 
+} else if (income < BRAC3) {; 
   difference = income - BRAC2;
   product = difference * TAXPER2;
   sum = product + ADDTAX1;
-  return sum;
-                                 statementDisplay.innerhtml= displaySum;
- 
-} else if (incomeField < BRAC4) {
+tax  = sum;
+} else if (income < BRAC4) {
   difference = income - BRAC3;
   product = difference * TAXPER3;
   sum = product + ADDTAX2;
-  return sum;
-                                 statementDisplay.innerhtml= displaySum;
-       
+  tax = sum;
  
 } else { 
-  difference = incomeField - BRAC4;
+  difference = income - BRAC4;
   product = difference * TAXPER4;
   sum = product + ADDTAX3;
-  return sum;
-                                 statementDisplay.innerHTML = displaySum;
-  
-}}
+  tax = sum;  
+}
+    return tax;
+}
 
 
 
