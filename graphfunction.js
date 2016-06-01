@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 /**
  * Tutorial on making graphs with plotly.js
  **/
@@ -10,42 +10,29 @@
  ( product + additional tax) .
  * Returns: the income tax to be payed
  */
-function incomeTax(){
+//function incomeTax(income){
     
-    
-    
-    
-    
-    
-    
-}
-
-function buttonpress() {
-    
-}
-
+//}
 /**
  * This function draws a graph
  */
 function drawGraph() {
 
     // declare all variables (variables inside a function are created when the function is called)
-    var income, difference, product, sum ;
+    var income, difference, product, sum, tax;
     income = document.getElementById("incomeField");
    
     
     //generate the values
-    for (var i = 0; i < 26; i++) {
-        time[i] = i;
-        interest[i] = simpleInterest(100,0.05, i);  
+    for (var x = 0; x < 26; x++) {
+        income[x] = (income) ;
+        tax[x] = incomeTax(income);  
     }
     
-    
-
     /* Trace is an object that stores the x and y values. The x, y and type variables are required mandatory. */
     trace = {
-        x:time, // x values
-        y:interest, // y values
+        x:income, // x values
+        y:tax, // y values
         type: 'scatter', // the type of graph
         mode: 'lines+markers', // how the data should be displayed
         name: "trace" // a name for the data to appear on the legend (if present)
@@ -56,13 +43,13 @@ function drawGraph() {
 
     /* To add a title and axis labels, we need to create a layout (another object). Setting a layout is optional, but they do improve the graph. */
     layout = {
-        title: "A simple graph in Plotly",
+        title: "Zabututi Income Graph",
         yaxis: {
-            title: "y-axis", // give the axis a label
+            title: "Tax", // give the axis a label
             zerolinewidth: 1.5 // makes the zero line thicker
         },
         xaxis: {
-            title: "x-axis",
+            title: "Income",
             zerolinewidth: 1.5,
            // range: [0, 5] // sets a minimum and maximum value for the axis
         }
@@ -150,4 +137,4 @@ function drawGraph() {
 
 // Run the function to draw the graph.
 drawGraph();
->>>>>>> refs/remotes/SMMC-Web-Design/master
+
