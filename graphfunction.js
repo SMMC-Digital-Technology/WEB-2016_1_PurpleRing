@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 /**
  * Tutorial on making graphs with plotly.js
  **/
@@ -30,22 +30,22 @@ function buttonpress() {
 function drawGraph() {
 
     // declare all variables (variables inside a function are created when the function is called)
-    var income, difference, product, sum ;
+    var income, difference, product, sum, tax;
     income = document.getElementById("incomeField");
    
     
     //generate the values
-    for (var i = 0; i < 26; i++) {
-        time[i] = i;
-        interest[i] = simpleInterest(100,0.05, i);  
+    for (var x = 0; x < 26; i++) {
+        tax[x] = x;
+        income[x] =;  
     }
     
     
 
     /* Trace is an object that stores the x and y values. The x, y and type variables are required mandatory. */
     trace = {
-        x:time, // x values
-        y:interest, // y values
+        x:income, // x values
+        y:tax, // y values
         type: 'scatter', // the type of graph
         mode: 'lines+markers', // how the data should be displayed
         name: "trace" // a name for the data to appear on the legend (if present)
@@ -150,4 +150,4 @@ function drawGraph() {
 
 // Run the function to draw the graph.
 drawGraph();
->>>>>>> refs/remotes/SMMC-Web-Design/master
+
