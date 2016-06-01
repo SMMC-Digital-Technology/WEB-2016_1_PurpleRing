@@ -3,28 +3,31 @@
  * Tutorial on making graphs with plotly.js
  **/
 
-/**
- * This function calculates the income tax owed on an income.
- * Parameters: , income (per year), brackets, tax percentage, product (brackets * tax percentage) additional tax and 
- sum 
- ( product + additional tax) .
- * Returns: the income tax to be payed
- */
-//function incomeTax(income){
-    
-//}
+
+ //This function calculates the income tax owed on an income.
+  //Parameters: , income (per year), brackets, tax percentage, product (brackets * tax percentage) additional tax and 
+ //sum 
+ //( product + additional tax) .
+ // Returns: the income tax to be payed
+ 
+function incomeTax(income){
+    var income, tax
+    income=document.getElementById("incomeField")
+    return tax;
+}
 /**
  * This function draws a graph
  */
 function drawGraph() {
 
     // declare all variables (variables inside a function are created when the function is called)
-    var income, difference, product, sum, tax;
+    var income, tax;
     income = document.getElementById("incomeField");
    
     
     //generate the values
-    for (var x = 0; x < 26; x++) {
+    //defines position on graph
+    for (var x = 0; x < 184000; x+5) {
         income[x] = (income) ;
         tax[x] = incomeTax(income);  
     }

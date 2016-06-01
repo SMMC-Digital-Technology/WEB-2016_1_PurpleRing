@@ -23,18 +23,14 @@ var ADDTAX2 = 13330;
 var ADDTAX3 = 30490;
 //Statement Display variable
 var statementDisplay= document.getElementById("taxDue");
-var displayZero = "No tax";
-var displayProduct = " Your Tax is ";
-var displaySum = " Your Tax is" + sum ;
-var tax;
-
-
+var displayZero = " No tax " ;
+var displayResult= " Your tax is " ;
 
 //income tax calculator
 function calculateTax() { 
     var income=incomeField.value;
     var tax = incomeTax(income);
-    statementDisplay.innerHTML= displayProduct + tax;
+    statementDisplay.innerHTML= displayResult + tax;
 }
 
 function incomeTax(income) {
@@ -67,4 +63,5 @@ tax  = sum;
     return tax;
 }
 
+function incomeTax(){}
 function drawGraph(){}
