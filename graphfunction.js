@@ -9,11 +9,14 @@
  //sum 
  //( product + additional tax) .
  // Returns: the income tax to be payed
+
+//variables
+var income=document.getElementById("incomeField")
+
  
 function incomeTax(income){
     var income, tax
-    income=document.getElementById("incomeField")
-    return tax;
+ return tax;
 }
 /**
  * This function draws a graph
@@ -22,12 +25,10 @@ function drawGraph() {
 
     // declare all variables (variables inside a function are created when the function is called)
     var income, tax;
-    income = document.getElementById("incomeField");
-   
     
     //generate the values
     //defines position on graph
-    for (var x = 0; x < 184000; x+5) {
+    for (var x = 0; x < 250000; x+5) {
         income[x] = (income) ;
         tax[x] = incomeTax(income);  
     }
