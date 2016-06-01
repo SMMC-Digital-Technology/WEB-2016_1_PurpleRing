@@ -26,6 +26,8 @@ var statementDisplay= document.getElementById("taxDue");
 var displayZero = "No tax";
 var displayProduct = " Your Tax is ";
 var displaySum = " Your Tax is" + sum ;
+var tax;
+
 
 
 //income tax calculator
@@ -64,3 +66,5 @@ tax  = sum;
 }
     return tax;
 }
+
+function drawGraph(){}

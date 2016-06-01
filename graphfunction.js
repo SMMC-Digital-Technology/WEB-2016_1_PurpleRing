@@ -10,20 +10,9 @@
  ( product + additional tax) .
  * Returns: the income tax to be payed
  */
-function incomeTax(){
+//function incomeTax(income){
     
-    
-    
-    
-    
-    
-    
-}
-
-function buttonpress() {
-    
-}
-
+//}
 /**
  * This function draws a graph
  */
@@ -35,13 +24,11 @@ function drawGraph() {
    
     
     //generate the values
-    for (var x = 0; x < 26; i++) {
-        tax[x] = x;
-        income[x] =;  
+    for (var x = 0; x < 26; x++) {
+        income[x] = (income) ;
+        tax[x] = incomeTax(income);  
     }
     
-    
-
     /* Trace is an object that stores the x and y values. The x, y and type variables are required mandatory. */
     trace = {
         x:income, // x values
@@ -56,13 +43,13 @@ function drawGraph() {
 
     /* To add a title and axis labels, we need to create a layout (another object). Setting a layout is optional, but they do improve the graph. */
     layout = {
-        title: "A simple graph in Plotly",
+        title: "Zabututi Income Graph",
         yaxis: {
-            title: "y-axis", // give the axis a label
+            title: "Tax", // give the axis a label
             zerolinewidth: 1.5 // makes the zero line thicker
         },
         xaxis: {
-            title: "x-axis",
+            title: "Income",
             zerolinewidth: 1.5,
            // range: [0, 5] // sets a minimum and maximum value for the axis
         }
