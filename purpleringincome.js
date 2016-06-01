@@ -39,27 +39,27 @@ function incomeTax(income) {
 if (income < BRAC1) {
             tax = displayZero;
     
-} else if (income < BRAC2) {;
-   difference = income - BRAC1;
-   product = difference * TAXPER1 ;
+} else if (income < BRAC2) {
+    difference = income - BRAC1;
+    product = difference * TAXPER1 ;
     tax = product;
                                 
-} else if (income < BRAC3) {; 
-  difference = income - BRAC2;
-  product = difference * TAXPER2;
-  sum = product + ADDTAX1;
-tax  = sum;
+} else if (income < BRAC3) {
+    difference = income - BRAC2;
+    product = difference * TAXPER2;
+    sum = product + ADDTAX1;
+    tax  = sum;
 } else if (income < BRAC4) {
-  difference = income - BRAC3;
-  product = difference * TAXPER3;
-  sum = product + ADDTAX2;
-  tax = sum;
+    difference = income - BRAC3;
+    product = difference * TAXPER3;
+    sum = product + ADDTAX2;
+    tax = sum;
  
 } else { 
-  difference = income - BRAC4;
-  product = difference * TAXPER4;
-  sum = product + ADDTAX3;
-  tax = sum;  
+    difference = income - BRAC4;
+    product = difference * TAXPER4;
+    sum = product + ADDTAX3;
+    tax = sum;  
 }
     return tax;
 }
