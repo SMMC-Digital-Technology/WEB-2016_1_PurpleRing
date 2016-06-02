@@ -52,6 +52,8 @@ if (income < BRAC1) {
     product = difference * TAXPER2;
     sum = product + ADDTAX1;
     tax  = sum;
+    
+    //bracket 4
 } else if (income < BRAC4) {
     difference = income - BRAC3;
     product = difference * TAXPER3;
