@@ -1,25 +1,15 @@
-
 /**
  * Tutorial on making graphs with plotly.js
  **/
 
-
- //This function calculates the income tax owed on an income.
-  //Parameters: , income (per year)
- // Returns: the income tax to be payed
-
-//variables
-var income; ;
-var tax;
-
 /**
- * This function calculates the income tax*/
-
-function incomeTax(income){ 
-    return tax;
+ * This function calculates the interest owed on a simple interest loan.
+ * Parameters: principle, rate (per year) and time (in years).
+ * Returns: the simple interest
+ */
+function simpleInterest(principle, rate, time) {
+    return principle * rate * time;
 }
-
-
 
 /**
  * This function draws a graph
@@ -27,20 +17,22 @@ function incomeTax(income){
 function drawGraph() {
 
     // declare all variables (variables inside a function are created when the function is called)
-    var income
-    var tax; 
+    var trace, data, layout, time, interest;
+    time = [];
+    interest = [];
     
     //generate the values
-    //defines position on graph
-    for  (a = 0; a < 250000; a+50) {
-        income[a] = a ;
-        tax[a] = incomeTax(income);  
+    for (var i = 0; i < 26; i++) {
+        time[i] = i;
+        interest[i] = simpleInterest(100,0.05, i);  
     }
     
+    
+
     /* Trace is an object that stores the x and y values. The x, y and type variables are required mandatory. */
     trace = {
-        x:income, // x values
-        y:tax, // y values
+        x:time, // x values
+        y:interest, // y values
         type: 'scatter', // the type of graph
         mode: 'lines+markers', // how the data should be displayed
         name: "trace" // a name for the data to appear on the legend (if present)
@@ -51,13 +43,13 @@ function drawGraph() {
 
     /* To add a title and axis labels, we need to create a layout (another object). Setting a layout is optional, but they do improve the graph. */
     layout = {
-        title: "Zabututi Income Graph",
+        title: "A simple graph in Plotly",
         yaxis: {
-            title: "Tax", // give the axis a label
+            title: "y-axis", // give the axis a label
             zerolinewidth: 1.5 // makes the zero line thicker
         },
         xaxis: {
-            title: "Income",
+            title: "x-axis",
             zerolinewidth: 1.5,
            // range: [0, 5] // sets a minimum and maximum value for the axis
         }
@@ -69,4 +61,3 @@ function drawGraph() {
 
 // Run the function to draw the graph.
 drawGraph();
-

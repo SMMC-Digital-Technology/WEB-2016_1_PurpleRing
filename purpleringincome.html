@@ -20,7 +20,6 @@
         <div id="content">
             <p> Welcome to the website of the Government of Zabututi department of finance and taxation, as per order of the new administration this website has been implemented so that citizens like you will easily be able to calculate income tax. </p>
             
-            
             <p> Beneath is the table for reference to the new rules for the tax scheme</p>
        <!--Table settings-->
             <table class="Tax Rules">
@@ -58,7 +57,7 @@
                 <!--Bracket 4-->
                 <tr>
                     <td>$113,000-$184,500</td>
-                    <td> 24% of every dollar over $113,000 and $13,330 additional tax. </td>
+                    <td> 24% of every dollar over $113,000 and $13,330 additional tax.</td>
                 </tr>
                 
                 <!--Bracket 5-->
@@ -73,19 +72,21 @@
                 <!--Please do not use inline scripting for java, this must be saved in a separate file-->
                 <!--Input field goes here-->
                 <p> P.A stands for per annum (per year)</p>
-                <label> Income P.A : <input type="number" value="0" id="incomeField" oninput="calculateTax()">calculates tax </label>
+                <label> Income P.A : <input type="number" value="0" id="incomeField" oninput="calculateTax()"> </label>
                 <!--Javascript link-->
                 <p id="taxDue"> Type in your income P.A <p>
-                <script src="purpleringincome.js"> 
-                </script>
             </div>
+            <script src="purpleringincome.js"> 
+            </script>
             
             <!--test note to resolve conflict-->
             
             <!--Script for graph-->
-      
-        
-        
+           <div id="graph">
+               <script src="plotly.js"></script>
+               <script src="graphing.js"></script>
+            </div>
+            
         <footer>
             <P> The Zabututi Government does not take liability for any inconsistency for information. However if an error is encountered, please send an email to IT.Services@DOFT.gov.zi</P>
             <p> Any enquiries concerning taxation and finance should be directed to: Front.Desk@DOFT.gov.zi.</p>
@@ -93,4 +94,8 @@
             </footer>
         </div>
     </body>
+    
+    <!--media: -->
+    <!--graph should be attributed to plotly.com-->
+    
 </html>

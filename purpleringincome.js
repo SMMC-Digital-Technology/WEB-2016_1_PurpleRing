@@ -21,7 +21,7 @@ var TAXPER4 = 0.36;
 var ADDTAX1 = 3650;
 var ADDTAX2 = 13330;
 var ADDTAX3 = 30490;
-//Statement Display variable
+//Statement Display variable-displays result on website.
 var statementDisplay= document.getElementById("taxDue");
 var displayZero = " No tax " ;
 var displayResult= " Your tax is " ;
@@ -36,14 +36,17 @@ function calculateTax() {
 
 function incomeTax(income) {
     var tax;
+    //bracket 1
 if (income < BRAC1) {
             tax = displayZero;
     
+    //bracket 2
 } else if (income < BRAC2) {
     difference = income - BRAC1;
     product = difference * TAXPER1 ;
     tax = product;
-                                
+       
+    //bracket 3
 } else if (income < BRAC3) {
     difference = income - BRAC2;
     product = difference * TAXPER2;
