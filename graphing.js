@@ -5,10 +5,10 @@
 //this section creates variables and functions to be represnted as data on the graph please refer to purpleringincome.js for more information on variables.
 
 //brackets
-var BRAC1;
-var BRAC2;
-var BRAC3;
-var BRAC4;
+var BRAC1 = 16000;
+var BRAC2 = 52500;
+var BRAC3 = 11300;
+var BRAC4 = 184500;
 var BRAC5 = 250000;
 //inc means increment
 var inc1 = BRAC1 + 500;
@@ -21,9 +21,9 @@ var sub2 = inc2 - BRAC2;
 var sub3 = inc3 - BRAC3;
 var sub4 = inc4 - BRAC4;
 //additional tax refer to purpleringincome.js
-var ADDTAX1;
-var ADDTAX2;
-var ADDTAX3;
+var ADDTAX1 = 3650;
+var ADDTAX2 = 13330;
+var ADDTAX3 = 30490;
 
 //functions, the results are to be displayed on the y axis.
 //bt means bracket tax
@@ -86,7 +86,7 @@ var y9 = bt9;
 
 //x values to be diplayed refer to income brackets note: x values go up by increments of 500 until 184500 to 250000
 
-    
+//ignore metrial above, attempted use of functions for graph.
 
 /**
  * This function draws a graph
@@ -100,7 +100,7 @@ function drawGraph() {
     /* Trace is an object that stores the x and y values. The x, y and type variables are required mandatory. */
         trace = {
             x: [16000, 16500, 52500, 53000, 113000, 113500, 184500 , 185000, 250000 ], // x values
-            y: [0, 50, 3650, 3730, 13330, 13450, 30490, 30670,  ], // y values
+            y: [0, 50, 3650, 3730, 13330, 13450, 30490, 30670, 54070  ], // y values
         type: 'scatter', // the type of graph
         mode: 'lines+markers', // how the data should be displayed
         name: "trace" // a name for the data to appear on the legend (if present)
