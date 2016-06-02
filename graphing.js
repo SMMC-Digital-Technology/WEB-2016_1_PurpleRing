@@ -61,24 +61,26 @@ function bt7() {
 }
     
 function bt8() {
-    return (sub4 - BRAC4) * 36 + ADDTAX3;
+    return (sub4 - BRAC4) * 0.36 + ADDTAX3;
 }
     
 //bracket 5
 function bt9() {
-    return (BRAC5 - BRAC4) * 36 + ADDTAX3;
+    return (BRAC5 - BRAC4) * 0.36 + ADDTAX3;
 }
     
 //y values
-y1 = bt1;
-y2 = bt2;
-y3 = bt3;
-y4 = bt4;
-y5 = bt5;
-y6 = bt6;
-y7 = bt7;
-y8 = bt8;
-y9 = bt9;
+var y1 = bt1;
+var y2 = bt2;
+var y3 = bt3;
+var y4 = bt4;
+var y5 = bt5;
+var y6 = bt6;
+var y7 = bt7;
+var y8 = bt8;
+var y9 = bt9;
+//ignore meterial above, attempted use of functions for graph
+
     
 //written as result of bt(N) refer to above functions and variables
 
@@ -97,8 +99,8 @@ function drawGraph() {
     
     /* Trace is an object that stores the x and y values. The x, y and type variables are required mandatory. */
         trace = {
-            x: [16000, 16500, 52500, 53000, 113000, 113500, 18450 , 184500, 250000 ], // x values
-            y: [y1, y2, y3, y4, y5, y6, y7, y8, y9 ], // y values
+            x: [16000, 16500, 52500, 53000, 113000, 113500, 184500 , 185000, 250000 ], // x values
+            y: [0, 50, 3650, 3730, 13330, 13450, 30490, 30670,  ], // y values
         type: 'scatter', // the type of graph
         mode: 'lines+markers', // how the data should be displayed
         name: "trace" // a name for the data to appear on the legend (if present)
@@ -112,7 +114,8 @@ function drawGraph() {
         title: "Tax data from Zabututi income brackets",
         yaxis: {
             title: "tax", // give the axis a label
-            zerolinewidth: 1.5 // makes the zero line thicker
+            zerolinewidth: 1.5, // makes the zero line thicker
+            range: [0, 60000]
         },
         xaxis: {
             title: "income",
