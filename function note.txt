@@ -1,0 +1,3 @@
+function simpleinterest(principle, rate, time) {
+return principle * rate * time;
+}
